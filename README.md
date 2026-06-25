@@ -6,15 +6,22 @@ This project demonstrates threat hunting using Windows Event Logs and Splunk Ent
 
 ## Architecture
 
-Windows Machine
+## Architecture
 
-↓
-
-Splunk Universal Forwarder
-
-↓
-
-Splunk Enterprise (Kali Linux)
+```text
++---------------------------+
+| Windows Machine           |
+| Windows Event Logs        |
++------------+--------------+
+             |
+             | Splunk Universal Forwarder
+             |
+             v
++---------------------------+
+| Kali Linux                |
+| Splunk Enterprise         |
++---------------------------+
+```
 
 ## Threat Scenarios
 
